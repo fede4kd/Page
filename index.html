@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Mi Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="banner" id="sec">
+		<header>
+			<a href="#" class="logo">4kDWeb</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+		<div class="content">
+			<h2>Hola! <br> Soy <span>Federico Fourcade</span></h2>
+			<p>Diseñador Web egresado de la Escuela de Diseño Digital CoderHouse y me encantaría que puedas ver todos mis proyectos.
+			<br>
+			Trabajos realizados con Html5, Css3 y JavaScript.</p>
+			<a href="#">Saber más</a>
+		</div>
+		<ul class="sci">
+	      <li><a href="#" target="_blank"><img src="img/linkedin.png"></a></li>
+	      <li><a href="https://www.facebook.com/federico.fourcade.3" target="_blank"><img src="img/facebook2.png"></a></li>		      <li><a href="https://twitter.com/Fede_4kd" target="_blank"><img src="img/twitter2.png"></a></li>
+	      <li><a href="https://www.instagram.com/fede4kd" target="_blank"><img src="img/instagram.png"></a></li>
+	    </ul>
+	</section>
+	<div id="navigation">
+		<ul class="nav">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="sobremi.html">Sobre mi</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Portafolio</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('sec');
+			var nav = document.getElementById('navigation');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+</body>
